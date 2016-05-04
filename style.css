@@ -1,0 +1,154 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+}
+
+#ulkoinen {
+    min-width: 300px;
+    max-width: 600px;
+}
+
+#ulkoinen img {
+    width: 30%;
+    max-height: 160px;
+    float: left;
+}
+
+#ulkoinen:hover {
+    cursor: pointer;
+}
+
+#sisainen {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    background: #1A1A1A;
+    display: inline-block;
+    bottom: 0;
+}
+
+#plussa {
+    margin-top: 8%;
+    display: inline-block;
+    width: 70%;
+    text-align: center;
+}
+
+#kuvallinen {
+    position: relative;
+    min-height: 215px;
+    background-size: cover !important;
+}
+
+#ylateksti {
+    margin: 0;
+}
+
+#alateksti {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+#kuvajateksti {
+    display: inline-block;
+}
+
+#sisennys {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#valike {
+    height: 60px;
+    width: 20%;
+    float: left;
+    background-color: #BE0000;
+}
+
+#nuoli {
+    height: 100%;
+    width: 100%;
+    float: left;
+    background: url('arrows.svg');
+    background-size: 60% 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#tilaa {
+    background-color: #E00001;
+    height: 60px;
+    width: 80%;
+    float: left;
+    text-align: center;
+    font-size: 24px;
+    line-height: 60px;
+}
+
+@media (max-width: 400px) {
+    #tilaa {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 480px) {
+    #kuvallinen {
+        height: 400px;
+    }
+    #ylateksti {
+        font-size: 32px;
+    }
+    #alateksti {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+    #kuvallinen {
+        height: 460px;
+    }
+    #ylateksti {
+        font-size: 32px;
+    }
+    #alateksti {
+        font-size: 24px;
+    }
+    #sisainen {
+        height: 120px;
+    }
+    #sisennys {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 601px) {
+    #kuvallinen {
+        height: 480px;
+    }
+    #ylateksti {
+        font-size: 36px;
+    }
+    #alateksti {
+        font-size: 36px;
+    }
+    #sisainen {
+        height: 120px;
+        padding: 0;
+    }
+    #sisennys {
+        margin-top: 20px;
+    }
+    #tilaa {
+        line-height: 80px;
+    }
+    #tilaa,
+    #valike {
+        height: 80px;
+    }
+}
