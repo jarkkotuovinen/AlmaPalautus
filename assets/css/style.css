@@ -75,7 +75,7 @@ body {
     height: 100%;
     width: 100%;
     float: left;
-    background: url('arrows.svg');
+    background: url('../img/arrows.svg');
     background-size: 60% 60%;
     background-repeat: no-repeat;
     background-position: center;

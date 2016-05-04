@@ -10,7 +10,7 @@ x.onreadystatechange = function() {
     var linkki = doc.getElementsByTagName('link');
     var numero = Math.floor((Math.random() * 9) + 1);
 
-    $("#kuvallinen").append("<p id='alateksti'>" + otikko[numero].firstChild.nodeValue + "</p>");
+    $("#kuvallinen").append("<p id='alateksti'>" + otsikko[numero].firstChild.nodeValue + "</p>");
     var tausta = "url('" + kuva[numero - 1].firstChild.nodeValue + "') no-repeat";
     $('#kuvallinen').css("background", tausta);
     $('#ulkoinen').click(function(){
